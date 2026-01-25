@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ADD PROJECT */
+.add-project-section {
+  margin-bottom: 20px;
+}
+
+.add-project-form {
+  display: grid;
+  grid-template-columns: 2fr 3fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.add-project-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.add-project-form input,
+.add-project-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-project-form textarea {
+  resize: none;
+}
+
+.add-project-form button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-project-form button:hover {
+  background-color: #1e40af;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+/* PROJECT LIST */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-list .empty {
+  opacity: 0.7;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  display: flex;
+  gap: 12px;
+  background-color: #1e293b;
+  padding: 12px;
+  border-radius: 8px;
+  align-items: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background-color: #273449;
+}
+
+.project-card .project-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  flex-shrink: 0;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.project-card p {
+  margin: 4px 0 0;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .add-project-form {
+    grid-template-columns: 1fr;
+  }
+
+  .add-project-form button {
+    width: 100%;
+  }
+}
